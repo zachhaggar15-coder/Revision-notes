@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /dashboard
+Disallow: /dashboard/demo
+Disallow: /textbook
+
+Sitemap: https://revision-notes.vercel.app/sitemap.xml

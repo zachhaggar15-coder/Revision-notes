@@ -203,7 +203,7 @@ CourseMind includes:
 - `sitemap.xml`
 - Noindex metadata for local workspace pages
 
-Set `NEXT_PUBLIC_SITE_URL` to the production domain before deploying, especially when using a custom domain. If it is not set, production builds fall back to Vercel system URL variables and then to `https://revision-notes.vercel.app`.
+Set `NEXT_PUBLIC_SITE_URL` to the production domain before deploying, especially when using a custom domain. If it is not set, metadata falls back to Vercel system URL variables and then to `https://revision-notes.vercel.app`. The public sitemap is a static file at `public/sitemap.xml`.
 
 ## Deploying to Vercel
 

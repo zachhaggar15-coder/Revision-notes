@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbfaf7;
+  --foreground: #171713;
+  --muted: #6f6b60;
+  --line: #e7e1d7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(30, 144, 120, 0.1), transparent 34rem),
+    linear-gradient(180deg, #fbfaf7 0%, #f6f3ed 48%, #fbfaf7 100%);
+  color: var(--foreground);
+  font-family: "Geist", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #72ccb2;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  transform: translateY(-150%);
+  border-radius: 6px;
+  background: #15251f;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  transition: transform 0.16s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+::selection {
+  background: #bfe9d9;
+  color: #111111;
+}
+
+.surface {
+  border: 1px solid rgba(44, 39, 31, 0.1);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 24px 80px rgba(54, 44, 28, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.fine-grid {
+  background-image:
+    linear-gradient(rgba(23, 23, 19, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 23, 19, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.prose-course {
+  color: #24231f;
+  line-height: 1.75;
+}
+
+.prose-course h1,
+.prose-course h2,
+.prose-course h3 {
+  color: #171713;
+  font-weight: 760;
+  line-height: 1.18;
+}
+
+.prose-course h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+}
+
+.prose-course h2 {
+  margin: 1.5rem 0 0.75rem;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.prose-course h3 {
+  margin: 1.2rem 0 0.45rem;
+  font-size: 1.1rem;
+}
+
+.prose-course p,
+.prose-course ul,
+.prose-course ol {
+  margin: 0.7rem 0;
+}
+
+.prose-course ul,
+.prose-course ol {
+  padding-left: 1.25rem;
+}
+
+.prose-course li {
+  margin: 0.35rem 0;
+}
+
+.prose-course strong {
+  color: #111111;
+}
+
+.prose-course code {
+  border-radius: 6px;
+  background: #f1ede4;
+  padding: 0.08rem 0.28rem;
+  font-size: 0.9em;
+}
+
+.prose-course table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.prose-course th,
+.prose-course td {
+  border: 1px solid #e5ded2;
+  padding: 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose-course th {
+  background: #f4efe7;
+}
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.float-in {
+  animation: float-in 0.6s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

@@ -203,7 +203,7 @@ CourseMind includes:
 - `sitemap.xml`
 - Noindex metadata for local workspace pages
 
-Set `NEXT_PUBLIC_SITE_URL` to the production domain before deploying.
+Set `NEXT_PUBLIC_SITE_URL` to the production domain before deploying, especially when using a custom domain. If it is not set, production builds fall back to Vercel system URL variables and then to `https://revision-notes.vercel.app`.
 
 ## Deploying to Vercel
 
@@ -212,6 +212,7 @@ Set `NEXT_PUBLIC_SITE_URL` to the production domain before deploying.
 3. Add environment variables in Vercel Project Settings.
 4. Deploy.
 5. Confirm Analytics and Speed Insights are enabled in the Vercel dashboard.
+6. Submit `https://your-domain.com/sitemap.xml` in Google Search Console.
 
 Vercel will detect Next.js automatically. The app does not require databases or managed storage for the MVP.
 

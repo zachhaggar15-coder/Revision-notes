@@ -55,6 +55,9 @@ export const metadata: Metadata = {
     follow: true,
     index: true,
   },
+  verification: {
+    google: "W_cXUFCxm-jIs-_khC6W-3zDO7EmXez-1_OzLdDa63c",
+  },
   twitter: {
     card: "summary_large_image",
     title: seoTitle,

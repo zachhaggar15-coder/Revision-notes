@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://revision-notes.vercel.app/</loc>
+    <loc>https://revision-notes-eight.vercel.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://revision-notes.vercel.app/about</loc>
+    <loc>https://revision-notes-eight.vercel.app/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revision-notes.vercel.app/contact</loc>
+    <loc>https://revision-notes-eight.vercel.app/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revision-notes.vercel.app/privacy</loc>
+    <loc>https://revision-notes-eight.vercel.app/privacy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revision-notes.vercel.app/terms</loc>
+    <loc>https://revision-notes-eight.vercel.app/terms</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revision-notes.vercel.app/ai-disclaimer</loc>
+    <loc>https://revision-notes-eight.vercel.app/ai-disclaimer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

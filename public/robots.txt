@@ -5,4 +5,4 @@ Disallow: /dashboard
 Disallow: /dashboard/demo
 Disallow: /textbook
 
-Sitemap: https://revision-notes.vercel.app/sitemap.xml
+Sitemap: https://revision-notes-eight.vercel.app/sitemap.xml

@@ -1,4 +1,4 @@
-const FALLBACK_PRODUCTION_URL = "https://revision-notes.vercel.app";
+const FALLBACK_PRODUCTION_URL = "https://revision-notes-eight.vercel.app";
 const LOCAL_URL = "http://localhost:3000";
 
 export function getSiteUrl() {

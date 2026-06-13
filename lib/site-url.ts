@@ -1,11 +1,18 @@
 const FALLBACK_PRODUCTION_URL = "https://revision-notes-eight.vercel.app";
+const STALE_PRODUCTION_URL = "https://revision-notes.vercel.app";
 const LOCAL_URL = "http://localhost:3000";
 
 export function getSiteUrl() {
   const explicitSiteUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL;
 
   if (explicitSiteUrl) {
-    return normalizeSiteUrl(explicitSiteUrl);
+    const normalizedSiteUrl = normalizeSiteUrl(explicitSiteUrl);
+
+    if (process.env.NODE_ENV === "production" && normalizedSiteUrl === STALE_PRODUCTION_URL) {
+      return FALLBACK_PRODUCTION_URL;
+    }
+
+    return normalizedSiteUrl;
   }
 
   if (process.env.NODE_ENV === "production") {
